@@ -29,8 +29,8 @@ async function run() {
     const transporter = nodemailer.createTransport({
       service: 'Gmail', // Use the appropriate email service
       auth: {
-        user: "techvixo@gmail.com", // Your email address (from .env)
-        pass: "ljup ispy gdgi bjqc"  // Your email password or app-specific password (from .env)
+        user: process.env.EMAIL_USER, // Your email address (from .env)
+        pass: process.env.EMAIL_PASS  // Your email password or app-specific password (from .env)
       }
     });
 
